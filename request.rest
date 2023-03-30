@@ -1,0 +1,39 @@
+GET http://localhost:3000/auth
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDIwYWFhMTgwYWYwNzEyMWU5N2Q2MzEiLCJ1c2VybmFtZSI6IkhFWS1GUkVEIiwiZW1haWwiOiJkZXZAbWFpbC5jb20iLCJpYXQiOjE2Nzk4NjgyMDR9.ypT-qZkqU6wV71KoVciHf9xXPXc4gYvEomT_48dXQM0
+
+# {
+#     "username":"HEWY-FRED",
+#     "email":"devfraed@mail.com",
+#     "password":"password",
+#     "confirm":"password"
+# }
+
+###
+ 
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username":"HE3Y-FRED",
+    "password" :"pasxsword"
+}
+
+### 
+POSt http://localhost:3000/posts/all
+Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDIwYWFhMTgwYWYwNzEyMWU5N2Q2MzEiLCJ1c2VybmFtZSI6IkhFWS1GUkVEIiwiZW1haWwiOiJkZXZAbWFpbC5jb20iLCJpYXQiOjE2Nzk4NjgyMDR9.ypT-qZkqU6wV71KoVciHf9xXPXc4gYvEomT_48dXQM0
+
+{
+    "content" : "HEY  IS COUSIN HELLO FRED!" 
+}
+
+###
+DELETE http://localhost:3000/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDIwYWFhMTgwYWYwNzEyMWU5N2Q2MzEiLCJ1c2VybmFtZSI6IkhFWS1GUkVEIiwiZW1haWwiOiJkZXZAbWFpbC5jb20iLCJpYXQiOjE2Nzk4NjgyMDR9.ypT-qZkqU6wV71KoVciHf9xXPXc4gYvEomT_48dXQM0
+
+{
+    "postId":"7FC5B51EB537D5A139D0",
+    "userId": "6422e07559d64e6d1e962edd"
+}
