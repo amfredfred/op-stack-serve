@@ -14,7 +14,7 @@ app.use('/post', require('./Routes/Posts'))
 mongoose.connect(process.env.DB_URL)
 const DB = mongoose.connection
 DB.on('error', error => console.log('DB |:| Connection Errored!'))
-DB.once('open', opened => console.log('DB |:| Connected Successfully!'))
+DB.once('open', opened => console.log(`DB |:| Connected Successfully! ${process.env.DB_URL}`))
 
 
 app.listen(3000)

@@ -3,6 +3,7 @@ var relativeTime = require('dayjs/plugin/relativeTime')
 dayjs.extend(relativeTime)
 
 const UserResource = (user) => ({
+    'userId': user?._id,
     "username": user?.username,
     "email": user?.email,
     "earnings": user?.earnings,
